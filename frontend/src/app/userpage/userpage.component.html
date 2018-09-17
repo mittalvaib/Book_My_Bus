@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type ="text/javascript">
+  $(document).ready(function(){
+     $("#myCarousel").carousel({
+         interval : 3000
+     });
+});
+</script>
+
+<style type="text/css">
+	
+    .form-inline {
+        display: inline-block;
+    }
+	.navbar-header.col {
+		padding: 0 !important;
+	}	
+	.navbar {		
+		background: #fff;
+		padding-left: 16px;
+		padding-right: 16px;
+		border-bottom: 1px solid #d6d6d6;
+		box-shadow: 0 0 4px rgba(0,0,0,.1);
+	}
+	.nav-link img {
+		border-radius: 50%;
+		width: 36px;
+		height: 36px;
+		margin: -8px 0;
+		float: left;
+		margin-right: 10px;
+	}
+	.navbar .navbar-brand {
+		color: #555;
+		padding-left: 0;
+		padding-right: 50px;
+		font-family: 'Merienda One', sans-serif;
+	}
+	.navbar .navbar-brand i {
+		font-size: 20px;
+		margin-right: 5px;
+	}
+	.search-box {
+        position: relative;
+    }	
+    .search-box input {
+		box-shadow: none;
+        padding-right: 35px;
+        border-radius: 3px !important;
+    }
+	.search-box .input-group-addon {
+        min-width: 35px;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 0;
+        z-index: 9;
+        padding: 7px;
+		height: 100%;
+    }
+    .search-box i {
+        color: #a0a5b1;
+		font-size: 19px;
+    }
+	.navbar .nav-item i {
+		font-size: 18px;
+	}
+	.navbar .dropdown-item i {
+		font-size: 16px;
+		min-width: 22px;
+	}
+	.navbar .nav-item.open > a {
+		background: none !important;
+	}
+	.navbar .dropdown-menu {
+		border-radius: 1px;
+		border-color: #e5e5e5;
+		box-shadow: 0 2px 8px rgba(0,0,0,.05);
+	}
+	.navbar .dropdown-menu li a {
+		color: #777;
+		padding: 8px 20px;
+		line-height: normal;
+	}
+	.navbar .dropdown-menu li a:hover, .navbar .dropdown-menu li a:active {
+		color: #333;
+	}	
+	.navbar .dropdown-item .material-icons {
+		font-size: 21px;
+		line-height: 16px;
+		vertical-align: middle;
+		margin-top: -2px;
+	}
+  .example{
+    margin: 200px 200px;
+  }
+	.navbar .badge {
+		background: #f44336;
+		font-size: 11px;
+		border-radius: 20px;
+		position: absolute;
+		min-width: 10px;
+		padding: 4px 6px 0;
+		min-height: 18px;
+		top: 5px;
+	}
+	.navbar ul.nav li a.notifications, .navbar ul.nav li a.messages {
+		position: relative;
+		margin-right: 10px;
+	}
+	.navbar ul.nav li a.messages {
+		margin-right: 20px;
+	}
+	.navbar a.notifications .badge {
+		margin-left: -8px;
+	}
+	.navbar a.messages .badge {
+		margin-left: -4px;
+	}	
+	.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+		background: transparent !important;
+	}
+	.form-control {
+		border-color: #eee;
+        min-height: 40.5px;
+		box-shadow: none !important;
+	}
+    .form-control:focus {
+		border-color: #5cd3b4;
+	}
+    .form-control, .btn {        
+        border-radius: 3px;
+    }
+	.signup-form {
+		width: 350px;
+	
+		padding: 30px 0;
+	}
+    .signup-form h2 {
+		color: #333;
+   
+    }
+    .signup-form form {
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	.signup-form .form-group {
+		margin-bottom: 20px;
+	}
+	.signup-form label {
+		font-weight: bold;
+    color : seagreen; 
+		font-size: 15px;
+	}
+    .signup-form input[type="checkbox"] {
+		margin-top: 2px;
+	}
+    .signup-form .btn {        
+        font-size: 16px;
+        font-weight: bold;
+		background: #5cd3b4;
+		border: none;
+		margin-top: 20px;
+		min-width: 140px;
+    }
+	.signup-form .btn:hover, .signup-form .btn:focus {
+		background: #41cba9;
+        outline: none !important;
+	}
+
+	.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 30px auto 60px;
+	padding: 0 80px;
+	position: relative;
+}
+.carousel .item {
+    text-align: center;
+	overflow: hidden;
+}
+.carousel .item h4 {
+	font-family: 'Varela Round', sans-serif;
+}
+.carousel .item img {
+	max-width: 100%;
+	display: inline-block;
+}
+.carousel .item .btn {
+	border-radius: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	background: #a177ff;
+	padding: 6px 15px;
+	margin-top: 5px;
+}
+.carousel .item .btn:hover {
+	background: #8c5bff;
+}
+.carousel .item .btn i {
+	font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	margin: 5px;
+	text-align: left;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);   
+}
+.carousel .thumb-content {
+	padding: 15px;
+	font-size: 13px;
+}
+.carousel .carousel-control {
+	height: 44px;
+	width: 44px;
+	background: none;	
+    margin: auto 0;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+}
+.carousel .carousel-control i {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -19px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+	text-shadow: none;
+    font-weight: bold;
+}
+.carousel .carousel-control.left i {
+	margin-left: -3px;
+}
+.carousel .carousel-control.right i {
+	margin-right: -3px;
+}
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 4px;
+	border-color: transparent;
+}
+.carousel-indicators li {	
+	background: #ababab;
+}
+.carousel-indicators li.active {	
+	background: #555;
+}
+
+
+</style>
+
+
+</head> 
+<body>
+  <div class = "container">
+    
+    <br>
+	<div class="row">
+		 <div class="col-xs-12">
+<nav class="navbar navbar-default navbar-expand-xl navbar-light">
+	
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" >
+		<ul class="nav navbar-nav">
+			<li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right ml-auto">
+			<li class="nav-item dropdown">
+				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="https://cdn4.iconfinder.com/data/icons/peppyicons-rounded/512/user1-512.png" class="avatar" alt="Avatar"> {{firstname}} {{lastname}} <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="/profile" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></li>
+				<li><a href="/bookinghistory" class="dropdown-item"><i class="fa fa-sliders"></i> Booking History</a></li>
+					<li class="divider dropdown-divider"></li>
+					<li><a (click) ="OnLogout()" href="/" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+		 </div>
+	</div>
+
+<div class ="row">
+	<div class = "col-sm-4">	
+<div class="signup-form">
+    <form  class="form-horizontal" (submit) = "OnSearchSubmit()">
+			
+        <div class="form-group">
+      <label class="control-label col-xs-4"><b>From City</b></label>
+			<div class="col-xs-8">
+                  <select   class="form-control" name="fromcity" [(ngModel)]="fromcity" placeholder="From" >
+          <option *ngFor = 'let city of cities' value = "{{city.cityname}}">{{city.cityname}}</option>
+        </select>
+            </div>        	
+        </div>
+		<div class="form-group">
+      <label class="control-label col-xs-4"><strong>To City</strong></label>
+			<div class="col-xs-8">
+             <select   class="form-control" name="tocity" [(ngModel)]="tocity" >
+          <option *ngFor = 'let city of cities' value = "{{city.cityname}}">{{city.cityname}}</option>
+        </select>
+            </div>        	
+        </div>
+		<div class="form-group">
+      <label class="control-label col-xs-4"><b>DOJ</b></label>
+			<div class="col-xs-8">
+    <input class ="form-control" type="date" name="doj" [(ngModel)]="doj"  />
+            </div>        	
+        </div>
+	
+		<div class="form-group">
+			<div class="col-xs-8 col-xs-offset-4">
+				
+        <input type="submit"  class="btn btn-primary btn-lg" value ="Search Buses">
+		
+			</div>  
+		
+		</div>	
+		       
+    </form>
+   
+
+
+
+
+	
+</div>
+	</div>
+
+<div class = "col-sm-8">
+	<br>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item carousel-item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://wallpapercave.com/wp/wp1891573.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Delhi</h4>
+									<p>Delhi, India’s capital territory, is a massive metropolitan area in the country’s north famous for LotusTemple.</p>
+									<a href="https://en.wikipedia.org/wiki/Delhi" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="http://s3.india.com/travel/wp-content/uploads/2014/09/Mumbai-Gateway-625x470.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Mumbai</h4>
+									<p>Mumbai (formerly called Bombay) is a densely populated city on India’s west coast.</p>
+									<a href="https://en.wikipedia.org/wiki/Mumbai" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>				
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://c1.hiqcdn.com/customcdn/1024x768/uploadimages/travel/Jaipur_irctc_cover.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Jaipur</h4>
+									<p>Jaipur is the capital of India’s Rajasthan state and known as Pink City for it's trademark building color. </p>
+									<a href="https://en.wikipedia.org/wiki/Jaipur" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://i0.wp.com/buddybits.com/wp-content/uploads/2016/08/15-Amazing-Facts-about-Bangalore.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Bangalore</h4>
+									<p>Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state.</p>
+									<a href="https://en.wikipedia.org/wiki/Bangalore" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://www.tutorialrepublic.com/examples/images/cities/agra.png" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Agra</h4>
+									<p>Agra is a city in Uttar Pradesh state. It's home to the iconic Taj Mahal.</p>
+									<a href="https://en.wikipedia.org/wiki/Agra" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://www.iitk.ac.in/new/images/large-images/kanpur-city/places-to-see-in-kanpur.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Kanpur</h4>
+									<p>Kanpur is a large industrial city on the banks of the Ganges River, in the state of Uttar Pradesh.</p>
+									<a href="https://en.wikipedia.org/wiki/Kanpur" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://c1.hiqcdn.com/customcdn/1024x768/uploadimages/travel/Coimbatore-10109_12.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Coimbatore</h4>
+									<p>Coimbatore is a city in the south Indian state of Tamil Nadu contains butterflies inhabit Singanallur Lake.</p>
+									<a href="https://en.wikipedia.org/wiki/Coimbatore" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://www.holidify.com/images/bgImages/CHANDIGARH.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Chandigarh</h4>
+									<p>Chandigarh, the capital of the northern Indian states of Punjab and Haryana. His buildings include High Court and Legislative Assembly.</p>
+									<a href="https://en.wikipedia.org/wiki/Chandigarh" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/10/winter-carnival.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Shimla</h4>
+									<p>Shimla is a city in the Himalayan foothills, known as the summer capital of British India in 1903.</p>
+									<a href="https://en.wikipedia.org/wiki/Shimla" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<span><i class="fa fa-angle-left"></i></span>
+			</a>
+			<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+				<span><i class="fa fa-angle-right"></i></span>
+			</a>
+		</div>
+
+</div>
+</div>
+
+  </div>
+  
+</body>
+</html>                                                        

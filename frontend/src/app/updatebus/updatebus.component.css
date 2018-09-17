@@ -1,0 +1,7 @@
+body {
+    height: 680px;
+    position: relative;
+    background-image: url("../images/register.jpg");
+   
+    background-size: cover;
+}

@@ -1,0 +1,39 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="jumbotron text-center">
+	
+
+	
+
+	<form action="/charge" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_xod7o5mfXR46pF6V4CfBs0F3"
+    data-amount="999"
+    data-name="Demo Site"
+    data-description="Example charge"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+	data-currency="inr">
+  </script>
+  <inpute type="hidden" name="chargeamount" value="999">
+</form>
+</div>
+
+	
+
+</div>
+</body>
+</html>
